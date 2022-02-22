@@ -1,0 +1,378 @@
+:root{
+    --ff1:'Roboto', sans-serif;
+    --brand:#ffca36;
+    --primary-color:#353535;
+    --secondary:#dddddd;
+    --text-color:#555555;
+    --white-color:#ffffff;
+    
+    --over-7:rgba(0, 0, 0, 0.7 );
+    --over-8:rgba(0, 0, 0, 0.8);
+}
+/*=============================
+    Root CSS Ends 
+================================*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+
+/*=============================
+    Common CSS Ends 
+================================*/
+
+.roboto-light{
+    font-family: var(--ff1);
+    font-weight:300;   
+}
+.roboto-reg{
+    font-family: var(--ff1);
+    font-weight:400;   
+}
+.roboto-mid{
+    font-family: var(--ff1);
+    font-weight:500;   
+}
+.roboto-bold{
+    font-family: var(--ff1);
+    font-weight:700;   
+}
+/*=============================
+    Font-Family details 
+================================*/
+.fs-13{
+    font-size:13px;
+}
+.fs-14{
+    font-size:14px;
+}
+.fs-16{
+    font-size:16px;
+}
+.fs-18{
+    font-size:18px;
+}
+.fs-35{
+    font-size:35px;
+}
+.fs-40{
+    font-size:40px;
+}
+.fs-58{
+    font-size:58px;
+}
+.fs-80{
+    font-size:80px;
+}
+/*=============================
+    Font Size CSS Ends 
+================================*/
+.brand{
+    color:var(--brand);
+}
+.th-prime{
+    color:var(--primary-color);
+}
+.th-second{
+    color:var(--secondary);
+}
+.text{
+    color:var(--text-color);
+}
+.white{
+    color:var(--white-color);
+}
+
+.over-7{
+    color:var(--over-7);
+}
+.over-8{
+    color:var(--over-8);
+}
+/*=============================
+    Color CSS Ends 
+================================*/
+.text-up{
+    text-transform:uppercase;
+}
+.text-cap{
+    text-transform:capitalize;
+}
+/*=============================
+    Text-Transform CSS Ends 
+================================*/
+#head{
+    background:var(--brand);
+}
+#head .address{
+}
+#head .address i{
+    margin-top:13px;
+    
+}
+#head .address p{
+    padding-left:5px;
+    padding-top:13px;
+}
+#head .welcome{
+    background:var(--primary-color);
+    transform:skewX(-30deg);
+    
+}
+#head .welcome p{
+    transform:skewX(30deg);
+    line-height:40px;
+}
+#head .social ul li{
+    line-height:40px;
+    position:relative;
+}
+#head .social ul li a{
+    color:var(--primary-color);
+    cursor: pointer;
+    transition: all linear 0.4s;
+}
+#head .social ul li:hover a{
+    padding-left:10px;
+}
+#head .social ul li a::before{
+    content:'';
+    width:calc(100% + 30px);
+    height:80%;
+    position:absolute;
+    border-top:2px solid var(--primary-color);
+    border-bottom:2px solid var(--primary-color);
+    top:3px;
+    left:-10px;
+    transition:all ease-in-out 0.4s;
+    transform:scale(0,1);
+}
+#head .social ul li a::after{
+    content:'';
+    width:calc(81% + 24px);
+    height:calc(72% + 10px);
+    position:absolute;
+    border-left:2px solid var(--primary-color);
+    border-right:2px solid var(--primary-color);
+    top:-1px;
+    left:-4px;
+    transition:all ease-in-out 0.4s;
+    transition-delay: 0.1s;
+    transform:scale(0,1);
+}
+#head .social ul li a:hover::before{
+    transform:scale(1,1);
+}
+#head .social ul li a:hover::after{
+    transform:scale(1,1);
+
+}
+/*=============================
+    Header Section CSS Ends 
+================================*/
+.navbar{
+    background:#ffffff !important;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.navbar .navbar-nav .nav-item:last-of-type{
+    margin:0;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    line-height: 35px;
+    padding:0 20px !important;
+    position:relative;
+    transition:all linear 0.4s;
+}
+.navbar .navbar-nav .nav-item .nav-link::before{
+    content:'';
+    width:calc(95% + 13px);
+    height:83%;
+    position:absolute;
+    border-top:2px solid var(--brand);
+    border-bottom:2px solid var(--brand);
+    top:3px;
+    left:-4px;
+    transition:all ease-in-out 0.4s;
+    transform:scale(0,1);
+}
+.navbar .navbar-nav .nav-item .nav-link:hover::before{
+    transform: scale(1,1);
+}
+.navbar .navbar-nav .nav-item .nav-link::after{
+    content:'';
+    width:100%;
+    height:calc(84% + 13px);
+    position:absolute;
+    border-left:2px solid var(--brand);
+    border-right:2px solid var(--brand);
+    top:-3px;
+    left:1px;
+    transition:all ease-in-out 0.4s;
+    transform:scale(0,1);
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover::after{
+    transform: scale(1,1);
+}
+.navbar-light .navbar-nav .nav-link {
+	color:var(--primary-color);
+}
+.navbar .navbar-nav .nav-item:hover .nav-link{
+    color:var(--brand)!important;
+}
+.navbar .navbar-nav .check{
+    line-height:35px;
+}
+.navbar .navbar-nav .check .nav-link{
+    transition:all linear 0.4s;
+}
+.navbar .navbar-nav .check:hover .nav-link{
+    color:var(--brand)!important;
+}
+.navbar .navbar-nav .nav-item .active{
+    color:var(--brand) !important;
+}
+
+/*=============================
+    Navbar Section CSS Ends 
+================================*/
+#banner .banner-item{
+    position:relative;
+    z-index:1;
+    padding-top:235px;
+    padding-bottom:235px;
+}
+#banner .banner-item::after{
+    content:'';
+    width:100%;
+    height:100%;
+    background:var(--over-7);
+    position:absolute;
+    inset:0;
+    z-index:-1;
+}
+#banner .banner-item .banner-text p{
+    line-height:25px;
+    padding-top:10px;
+    padding-right:56px;
+}
+#banner .image1{
+    background:url(../images/banner-image-1.jpg)no-repeat center / cover;
+}
+#banner .image2{
+    background:url(../images/banner-image-2.jpg)no-repeat center / cover;
+}
+#banner .image3{
+    background:url(../images/banner-image-3.jpg)no-repeat center / cover;
+}
+
+#banner .banner-item a{
+    margin-top:58px;
+    line-height:50px;
+    padding:0 20px; 
+    transition: all linear 0.4s;  
+}
+#banner .banner-item a:hover{
+    background:var(--brand);
+    border-color:var(--brand);
+    color:var(--primary-color);
+}
+#banner .banner-item a:first-of-type{
+    margin-right:25px;
+}
+#banner .left-arrow {
+	font-size: 58px;
+	cursor: pointer;
+	color: var(--white-color);
+	position: absolute;
+	left: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 999;
+	width: calc(3% + 28px);
+	height: 9%;
+	border-top: 1px solid var(--white-color);
+	border-bottom: 1px solid var(--white-color);
+	text-align: center;
+    transition:all linear 0.4s;
+}
+#banner .left-arrow:hover{
+    color:var(--brand);
+    border-color:var(--brand);
+}
+#banner .left-arrow:hover{
+    color:var(--brand);
+}
+
+#banner .slick-slider .left-arrow::after {
+	content: '';
+	width: 92%;
+	height: calc(100% + 12px);
+	position: absolute;
+	border-left: 1px solid var(--white-color);
+	border-right: 1px solid var(--white-color);
+	top: -6px;
+	left: 4px;
+	transition: all ease-in-out 0.4s;
+	transform: scale(1,1);
+	z-index: 9999;
+}
+#banner .slick-slider .left-arrow:hover::after{
+    border-color:var(--brand);
+}
+#banner .right-arrow{
+    font-size:58px;
+    cursor:pointer;
+    color:var(--white-color);
+    position:absolute;
+    right:50px;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:999;
+    width: calc(3% + 28px);
+	height: 9%;
+	border-top: 1px solid var(--white-color);
+	border-bottom: 1px solid var(--white-color);
+	text-align: center;
+    transition:all linear 0.4s;
+}
+#banner .right-arrow:hover{
+    color:var(--brand);
+    border-color:var(--brand);
+}
+#banner .right-arrow:hover{
+    color:var(--brand);
+}
+
+#banner .slick-slider .right-arrow::after{
+	content: '';
+	width: 92%;
+	height: calc(100% + 12px);
+	position: absolute;
+	border-left: 1px solid var(--white-color);
+	border-right: 1px solid var(--white-color);
+	top: -6px;
+	left: 4px;
+	transition: all ease-in-out 0.4s;
+	transform: scale(1,1);
+	z-index: 9999;
+}
+#banner .slick-slider .right-arrow:hover::after{
+    border-color:var(--brand);
+}
+/*=============================
+    Banner Section CSS Ends 
+================================*/
