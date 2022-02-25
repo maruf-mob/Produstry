@@ -10,7 +10,7 @@
     --over-8:rgba(0, 0, 0, 0.8);
 }
 /*=============================
-    Root CSS Ends 
+    root css ends 
 ================================*/
 
 *{
@@ -29,7 +29,7 @@ img{
 }
 
 /*=============================
-    Common CSS Ends 
+    common css ends 
 ================================*/
 
 .roboto-light{
@@ -49,7 +49,7 @@ img{
     font-weight:700;   
 }
 /*=============================
-    Font-Family details 
+    font-family details 
 ================================*/
 .fs-13{
     font-size:13px;
@@ -76,7 +76,7 @@ img{
     font-size:80px;
 }
 /*=============================
-    Font Size CSS Ends 
+    font size css ends 
 ================================*/
 .brand{
     color:var(--brand);
@@ -101,7 +101,7 @@ img{
     color:var(--over-8);
 }
 /*=============================
-    Color CSS Ends 
+    color css ends 
 ================================*/
 .text-up{
     text-transform:uppercase;
@@ -110,13 +110,12 @@ img{
     text-transform:capitalize;
 }
 /*=============================
-    Text-Transform CSS Ends 
+    text-transform css ends 
 ================================*/
 #head{
     background:var(--brand);
 }
-#head .address{
-}
+
 #head .address i{
     margin-top:13px;
     
@@ -179,7 +178,7 @@ img{
 
 }
 /*=============================
-    Header Section CSS Ends 
+    header section css ends 
 ================================*/
 .navbar{
     background:#ffffff !important;
@@ -247,7 +246,7 @@ img{
 }
 
 /*=============================
-    Navbar Section CSS Ends 
+    navbar section css ends 
 ================================*/
 #banner .banner-item{
     position:relative;
@@ -374,5 +373,73 @@ img{
     border-color:var(--brand);
 }
 /*=============================
-    Banner Section CSS Ends 
+    banner section css ends 
+================================*/
+#service{
+    padding-top:80px;
+    padding-bottom:102px;
+}
+
+#service p{
+    padding:0 391px;
+}
+#service .service-item{
+    padding-top:62px;
+}
+#service .service-item .image{
+    width:150px;
+    height:150px;
+    border:1px solid var(--primary-color);
+    margin-left:130px;
+    transform:rotate(45deg);
+    transition:all linear 0.4s;
+}
+#service .service-item .image{
+    position:relative;
+    
+}
+#service .service-item:hover .image{
+    border-color:var(--brand);
+}
+#service .service-item .image::after{
+    content:'';
+    width:1px;
+    height:30px;
+    border:1px solid var(--primary-color);
+    border-style: dashed;
+    position:absolute;
+    right:-13px;
+    bottom:-27px;
+    transform:rotate(135deg); 
+    transition:all linear 0.4s;
+    transition-delay:0.5s;   
+}
+#service .service-item:hover .image::after{
+    border-color:var(--brand);
+}
+#service .service-item .image img{
+    transform:rotate(-45deg);
+}
+#service .service-item .text-box{
+    border:1px solid var(--primary-color);
+    margin-top:63px;
+    transition:all linear 0.4s;
+    transition-delay: 0.6s;
+}
+#service .service-item:hover .text-box{
+    border-color:var(--brand);
+    box-shadow: 0px 0px 3px #000000;
+}
+#service .service-item .text-box h3{
+    padding-top:60px;
+    padding-bottom:30px;
+}
+#service .service-item .text-box p{
+    line-height:25px;
+    padding:0 54px !important;
+    margin-bottom:65px;
+}
+
+/*=============================
+    service section css ends 
 ================================*/
