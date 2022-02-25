@@ -419,6 +419,7 @@ img{
 }
 #service .service-item .image img{
     transform:rotate(-45deg);
+    cursor: pointer;
 }
 #service .service-item .text-box{
     border:1px solid var(--primary-color);
